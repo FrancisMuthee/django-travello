@@ -849,14 +849,17 @@ section
 .destinations_row
 {
 	margin-top: 99px;
+	float: right;
 }
 .destination_image
 {
 	width: 100%;
+	position: absolute;
 }
 .destination_image img
 {
 	max-width: 100%;
+	float: left;
 }
 .spec_offer
 {
