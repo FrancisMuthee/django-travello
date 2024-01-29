@@ -294,7 +294,8 @@
 								<div class="destination_image">
 									<img src="{{dest.img.url}}"  alt="">
 
-									{%if dest.offer %}
+									{%if dest.offer %} 
+									{% comment %}The above default of being true {% endcomment %}
 									<div class="spec_offer text-center"><a href="#">Special Offer</a></div>
 									{%endif%}
 									
