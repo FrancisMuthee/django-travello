@@ -132,7 +132,6 @@ body {
     </style>
 </head>
 <body>
-    {% comment %} <form action="register" method="post"> {% endcomment %}
         {% csrf_token %}
         <section class="container">
             <header>Registration Form</header>
@@ -141,7 +140,6 @@ body {
               <div class="input-box">
                 <label>First name</label>
                 <input type="text" name="first_name" placeholder="First Name" />
-                {% comment %} <input type="text"  name="first_name" placeholder="Enter full name" required /> {% endcomment %}
               </div>
 
               <div class="input-box">
@@ -169,11 +167,6 @@ body {
                 <input type="password" name="password2" placeholder="password">
               </div>
 
-      
-           
-        
-     
- 
             {% for message in messages %}
             <h3>{{message}}</h3>
             {% endfor %}
